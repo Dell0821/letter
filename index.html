@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para sa Aking Asawa ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ffe0e9, #ffd1dc);
+    font-family: 'Georgia', serif;
+    overflow: hidden;
+}
+
+/* Envelope container */
+.envelope-container {
+    position: relative;
+    width: 90%;
+    max-width: 360px;
+    height: 220px;
+    perspective: 1000px;
+    z-index: 2;
+}
+
+/* Envelope */
+.envelope {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, #fff 0%, #f0f0f0 100%);
+    border: 2px solid #e0dede;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+
+/* Flap */
+.flap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, #f8c0d0 0%, #f06c9c 100%);
+    clip-path: polygon(0 0, 50% 55%, 100% 0);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.8s ease;
+    transform-origin: top;
+    z-index: 2;
+}
+
+.open .flap {
+    transform: rotateX(180deg);
+}
+
+/* Open button */
+.open-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f06292;
+    color: #fff;
+    border: none;
+    padding: 14px 22px;
+    font-size: 14px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 3;
+}
+
+/* Letter (hidden initially) */
+.letter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
+    width: 90%;
+    max-width: 380px;
+    height: 70vh;
+    max-height: 520px;
+    background: #fff8e7;
+    border-radius: 6px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    padding: 24px;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    font-size: 14px;
+    line-height: 1.7;
+    z-index: 5;
+    white-space: pre-wrap;
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(0,0,0,0.01) 0px,
+        rgba(0,0,0,0.01) 1px,
+        transparent 1px,
+        transparent 4px
+    );
+}
+
+.letter.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Floating hearts */
+.heart {
+    position: absolute;
+    bottom: -20px;
+    font-size: 18px;
+    animation: floatUp 6s linear infinite;
+    opacity: 0.8;
+}
+
+@keyframes floatUp {
+    from { transform: translateY(0) scale(1); opacity: 1; }
+    to { transform: translateY(-100vh) scale(1.5); opacity: 0; }
+}
+</style>
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/10/25/audio_9c5a98f4aa.mp3?filename=romantic-piano-126007.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Envelope -->
+<div class="envelope-container" id="envelope">
+    <div class="envelope">
+        <div class="flap"></div>
+    </div>
+    <button class="open-btn" onclick="openLetter()">Open My Letter 💌</button>
+</div>
+
+<!-- Letter -->
+<div class="letter" id="letter">
+Hello po asawa ko, sorry po kung hindi po ako nakapag bigay ng kahit ano po asawa ko at disappointment lang po ang natanggap mo😞. pero gusto ko lang po ipa-alam sayo na mahal na mahal po kita ng sobra sobra asawa ko🥰, kahit na po paminsan ay madalas po tayo magka away hehehe😅, ikaw po ang aking mundo asawa ko, ikaw ang nag bibigay lakas at sya din naman pong aking kahinaan🥰, at nag bibigay rason sa aking pag usad asawa ko. ikaw ang piiiiiinaka magandang babae sa balat ng lupa asawa ko at syempre ang pinaka sexy😍😘, mamahalin po kita ng buong buo at buong puso po akong magiging tapat sayo kahit hindi mo po ako bantayan ay hinding hindi po ako mag tataksil o gagawa ng mga bagay na makaka sira sa relasyon natin asawa ko😘🫶🏻❤️. mahal na mahal po kita ng sobra sobra asawa ko at buong puso kaya hinding hindi ko po kayang gawin po lahat ng yun asawa ko🥺, ikaw po ang aking mundo asawa ko. hindi ko po kakayanin kung ikaw ay mawawala dito sa aking buhay🥺. sobrang saya po ng aking puso mula ng dumating po ikaw sa aking buhay asawa ko🥰, na para po bang nasa ibang buhay ako, kasi kung i kukumpara po yung buhay ko noon sa ngayon, hindi lang po doble o triple asawa ko, dahil higit papo jan ang pag babago ng aking buhay mula ng ikaw ay dumating sa aking buhay asawa ko🥰😘. at bago po matapos itong aking munting mensahe para sayo asawa ko, ay gusto ko lang po humingi ng kaparawaran at sa mga disappontment po asawa ko. at wag na din pong pigilan mag tampo asawa ko, gagawin ko na po ang lahat para po hindi po mauwi sa away asawa ko🥺, pag nawala na po kasi yung ganyan ay parang nawawala na din po yung live🥺. gusto ko pong maging tapat po tato sa isa't isa at maging tapat din po sa nararamdaman asawa ko, mula po ngayon ay gagawin ko na po ang lahat upangnhundu na po maging away tuwing may tampuhan po at selos asawa ko🥺. please po balik na po natin sa dati na tapat po tayo sa nararamdaman natin🙏🏻. at gusto ko lang po sabihin na BABAWI PO AKO SA LAHAT NG PAG KUKULANG AT DISAPPONTMENTS ASAWA KO IPINAPANGAKO KO PO YAN SAYO ASAWA KO😘🥰🙏🏻. at alam ko din po na huli na po ito para sa pag bati at pag tatapat ng aking nararamdaman ngayong valentines day at sa bawat araw at sa mga susunod na panahon asawa ko, pero bumabati padin po ako ulit ng HAPPY VALENTINES DAY ASAWA KOOO😘😘😘. sobrang saya ko po talaga na ikaw po ang dumating sa buhaybko asawa koo, wag po ikaw mag alala dahil kung pakiramdam ko po na hindi ko po deserve lahat ng ito ay gagawin ko po ang lahat para maging deserving po ako asawa ko😘😘😘. ipinapangako ko pong gagawin ko po ang lahat lahat asawa ko, palagi pong mag iingat at aalagaan ang sarili ha asawa kooo, aalagaan pa po natin ang isat isa ha asawa ko pag dating ng panahoooon😘, indom din po maraming tubig haaaa, balang araw po makapag papakasal din tayo asawa ko at magkasama na po nating tutuparin mga pangarap po natin ng magkasama asawa ko🥰🥰, wala pong problema ang hindi po natin malalagpasan asawa ko basta po tayo ay magkasama wala pong imposible 😘. MAHAL NA MAHAL PO KITA NG SOBRA SOBRA ASAWA KOOOOOO😘🥰, ILOVEYOUUUU PO ASAWA KOOOO😘🥰🫶🏻❤️
+</div>
+
+<script>
+let opened = false;
+const music = document.getElementById("bgMusic");
+const envelope = document.getElementById("envelope");
+const letter = document.getElementById("letter");
+
+function openLetter() {
+    envelope.style.display = "none"; // hide envelope completely
+    letter.classList.add("show");
+
+    if (!opened) {
+        music.play();
+        startHearts();
+        opened = true;
+    }
+}
+
+function startHearts() {
+    setInterval(() => {
+        const heart = document.createElement("div");
+        heart.className = "heart";
+        heart.innerHTML = "❤️";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.fontSize = Math.random() * 10 + 15 + "px";
+        document.body.appendChild(heart);
+        setTimeout(() => heart.remove(), 6000);
+    }, 300);
+}
+</script>
+
+</body>
+</html>
